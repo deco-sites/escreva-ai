@@ -336,12 +336,6 @@
       ],
       "title": "deco-sites/escreva-ai/sections/Head.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9lc2NyZXZhLWFpL2NvbXBvbmVudHMvb3JnYW5pc21zL0hlYWRlci50c3g=@Props": {
-      "title": "deco-sites/escreva-ai/components/organisms/Header.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy9lc2NyZXZhLWFpL2NvbXBvbmVudHMvb3JnYW5pc21zL1NpdGUudHN4@Props": {
-      "title": "deco-sites/escreva-ai/components/organisms/Site.tsx@Props"
-    },
     "ZGVjby1jeC9saXZlL21hdGNoZXJzL01hdGNoRGF0ZS50cw==@Props": {
       "type": "object",
       "properties": {
@@ -772,11 +766,6 @@
     "ZGVjby1zaXRlcy9lc2NyZXZhLWFpL3NlY3Rpb25zL0hlYWRlci50c3g=": {
       "title": "deco-sites/escreva-ai/sections/Header.tsx",
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9lc2NyZXZhLWFpL2NvbXBvbmVudHMvb3JnYW5pc21zL0hlYWRlci50c3g=@Props"
-        }
-      ],
       "required": [
         "__resolveType"
       ],
@@ -793,11 +782,6 @@
     "ZGVjby1zaXRlcy9lc2NyZXZhLWFpL3NlY3Rpb25zL1NpdGVhbGwudHN4": {
       "title": "deco-sites/escreva-ai/sections/Siteall.tsx",
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9lc2NyZXZhLWFpL2NvbXBvbmVudHMvb3JnYW5pc21zL1NpdGUudHN4@Props"
-        }
-      ],
       "required": [
         "__resolveType"
       ],
