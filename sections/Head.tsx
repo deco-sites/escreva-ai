@@ -63,7 +63,7 @@ export default function HeadComponent({
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url(${asset("/fonts/helveticaneue.woff2")}) format('woff2');
+            src: url(${asset("/fonts/helvetica.ttf")}) format('truetype');
           }
           /* latin-ext */
           @font-face {

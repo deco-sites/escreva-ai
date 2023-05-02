@@ -5,7 +5,7 @@ export default function PriceTwo() {
         <p>25% OFF</p>
       </section>
       <h2 class="leading-3 font-medium text-gray-500 text-center">Escritor</h2>
-      <h2 class="text-xl font-bold text-gray-800 sm:text-3xl">R$&nbsp;25,95</h2>
+      <h2 class="text-xl font-bold text-gray-800 sm:text-3xl">R$ 25,95</h2>
       <ol class="flex-1 space-y-3">
         <li class="flex items-center gap-2 leading-3 text-gray-700 font-medium text-lg">
           <svg
