@@ -10,13 +10,21 @@ export default {
         "2xl": "1536px",
       },
       colors: {
-        primary: "#2FD180",
-        "primary-dark": "#003232",
-        "primary-light": "#C5FFE9",
+        "slate": {
+          900: "#0f172a",
+        },
+        "emerald": {
+          200: "#a7f3d0bf",
+          600: "#059669",
+        },
+        "sky": {
+          500: "#0ea5e9",
+          700: "#0369a1",
+        },
         transparent: "transparent",
       },
       fontFamily: {
-        sans: ["Albert Sans", "sans-serif"],
+        sans: ["Helvetica Neue", "sans-serif"],
         serif: ["serif"],
       },
     },

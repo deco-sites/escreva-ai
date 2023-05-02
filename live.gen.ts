@@ -6,8 +6,11 @@ import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 import * as $0 from "./functions/LoadGitHubRaw.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$$$$0 from "./sections/Head.tsx";
+import * as $$$$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$$$1 from "./sections/GetStarted.tsx";
+import * as $$$$$$$$2 from "./sections/Head.tsx";
+import * as $$$$$$$$3 from "./sections/Header.tsx";
+import * as $$$$$$$$4 from "./sections/Siteall.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -54,8 +57,11 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$0,
     "$live/sections/Slot.tsx": i1$$$1,
     "$live/sections/UseSlot.tsx": i1$$$2,
+    "deco-sites/escreva-ai/sections/Footer.tsx": $$$$$$$$0,
     "deco-sites/escreva-ai/sections/GetStarted.tsx": $$$$$$$$1,
-    "deco-sites/escreva-ai/sections/Head.tsx": $$$$$$$$0,
+    "deco-sites/escreva-ai/sections/Head.tsx": $$$$$$$$2,
+    "deco-sites/escreva-ai/sections/Header.tsx": $$$$$$$$3,
+    "deco-sites/escreva-ai/sections/Siteall.tsx": $$$$$$$$4,
   },
   "handlers": {
     "$live/handlers/devPage.ts": i1$0,
