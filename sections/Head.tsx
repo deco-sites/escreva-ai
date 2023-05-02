@@ -103,20 +103,19 @@ export default function HeadComponent({
           }
 
           *::-webkit-scrollbar {
-            width: 4px !important;
+            width: 4px;
           }
           *::-webkit-scrollbar-thumb {
-            background-color: rgba(156,163,175,.3) !important;
-            border-radius: 4px !important;
-            background-clip: content-box !important;
+            background-color: rgba(156,163,175,.3);
+            border-radius: 4px;
+            background-clip: content-box;
           }
           *::-webkit-scrollbar-track {
-            border-radius: 4px !important;
+            border-radius: 4px;
           }
 
           body {
-            font-family: 'Helvetica Neue !important';
-            padding: 40px !important;
+            font-family: 'Helvetica Neue';
           }
       `,
         }}

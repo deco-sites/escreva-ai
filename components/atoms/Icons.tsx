@@ -14,7 +14,7 @@ export type AvailableIcons =
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   id: AvailableIcons;
-  size?: string;
+  size?: number;
 }
 
 function Icon(
