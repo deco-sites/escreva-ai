@@ -57,7 +57,6 @@ export default function HeadComponent({
         dangerouslySetInnerHTML={{
           __html: `
 
-
           /* latin-ext */
           @font-face {
             font-family: 'Helvetica Neue';
@@ -117,6 +116,7 @@ export default function HeadComponent({
 
           body {
             font-family: 'Helvetica Neue !important';
+            padding: 40px !important;
           }
       `,
         }}
