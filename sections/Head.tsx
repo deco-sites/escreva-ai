@@ -63,6 +63,13 @@ export default function HeadComponent({
             font-style: normal;
             font-weight: 700;
             font-display: swap;
+            src: url(${asset("/fonts/helvetica.ttf")}) format('truetype');
+          }
+          @font-face {
+            font-family: 'Helvetica Two';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
             src: url(${asset("/fonts/helvetica.woff2")}) format('woff2');
           }
           /* latin-ext */

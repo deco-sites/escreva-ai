@@ -25,7 +25,7 @@ export default {
       },
       fontFamily: {
         sans: ["Helvetica Neue", "sans-serif"],
-        serif: ["serif"],
+        serif: ["Helvetica Two"],
       },
     },
   },
