@@ -5,7 +5,7 @@ import BigButton from "$start/components/atoms/BigButton.tsx";
 import { buttonProps } from "$start/components/atoms/BigButton.tsx";
 
 const navItems = [
-  { itemName: "Bate-Papo", itemUrl: "#", iconId: "robo" },
+  // { itemName: "Bate-Papo", itemUrl: "#", iconId: "robo" },
   { itemName: "Blog", itemUrl: "#", iconId: "jornal" },
   { itemName: "Onde usar", itemUrl: "#", iconId: "mouse" },
   { itemName: "Fale conosco", itemUrl: "#", iconId: "email2" },
@@ -27,6 +27,17 @@ export default function Header() {
 
         <div class="flex items-center">
           <div class="hidden space-x-6 font-medium md:flex items-center">
+            <a
+              href="#"
+              class="transition-colors duration-200 stroke-black hover:text-sky-700 hover:stroke-sky-700 max-md:px-3 max-md:py-2 max-md:rounded max-md:hover:bg-gray-100 max-md:block"
+            >
+              <span class="flex items-center gap-1 font-semibold">
+                <span>
+                  🤖
+                </span>
+                Bate-Papo
+              </span>
+            </a>
             {navItems.map((navItem) => (
               <NavItem
                 itemName={navItem.itemName}
