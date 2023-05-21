@@ -1,18 +1,23 @@
 import BigButton from "$start/components/atoms/BigButton.tsx";
 import { buttonProps } from "$start/components/atoms/BigButton.tsx";
 
-export default function MainBanner() {
+export interface JumbotronProps {
+  title: string;
+  description: string;
+  buttonTitle: string;
+}
+
+export default function MainBanner(props: JumbotronProps) {
   return (
     <section class="container px-4 pb-12 lg:pt-4 mx-auto">
       <div class="pt-6 grid items-center 2xl:gap-10 2xl:grid-cols-2">
         <div>
           <div class="space-y-5 container">
             <h1 class="text-[26px] leading-[32px] sm:text-3xl md:text-5xl font-bold text-black xl:w-4/12 2xl:w-auto">
-              Escreva melhor e mais rápido.
+              {props.title}
             </h1>
             <p class="text-base md:text-lg lg:text-xl font-medium text-gray-500 xl:w-2/3 2xl:w-auto">
-              Com Escreva Aí, você pode criar textos profissionais em questão de
-              segundos e economizar horas de trabalho manual.
+              {props.description}
             </p>
           </div>
 
@@ -21,7 +26,7 @@ export default function MainBanner() {
             href="#"
           >
             <span class="w-full font-semibold text-base group-hover:-translate-x-1.5 transition-transform">
-              Teste grátis
+              {props.buttonTitle}
             </span>
             <svg
               class="inline-block h-6 group-hover:translate-x-0.5 transition-transform group-hover:scale-110"

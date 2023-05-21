@@ -1,11 +1,14 @@
-import PriceCard from "$start/components/atoms/PriceCard.tsx";
-// import type { Props } from "$start/components/atoms/PriceCard.tsx";
-
 import PriceOne from "$start/components/molecules/PriceOne.tsx";
 import PriceTwo from "$start/components/molecules/PriceTwo.tsx";
 import PriceTree from "$start/components/molecules/PriceTree.tsx";
 
-export default function PriceSection() {
+export interface PriceSectionProps {
+  title: string;
+  description: string;
+  description2: string;
+}
+
+export default function PriceSection(props: PriceSectionProps) {
   return (
     <section class="grid place-content-center gap-3 py-12">
       <div class="w-full md:min-w-[423px] space-y-6">
@@ -17,16 +20,15 @@ export default function PriceSection() {
           </h2>
 
           <h2 class="text-4xl text-gray-900 font-extrabold md:text-5xl text-center">
-            Escreva como nunca antes
+            {props.title}
           </h2>
 
           <h3 class="text-xl text-center text-gray-500 max-w-3xl m-auto">
-            Não importa seu nível de escrita, nós temos um plano personalizado
-            para você. Eleve sua escrita a novos patamares e experimente já.
+            {props.description}
           </h3>
 
           <p class="text-center italic pt-2 pb-2 font-semibold text-gray-500">
-            3.000 palavras gratuitas por 14 dias.
+            {props.description2}
           </p>
         </section>
         {/* End Titles Div */}

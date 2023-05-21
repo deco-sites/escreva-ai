@@ -1,10 +1,9 @@
 import Image from "$start/components/atoms/Image.tsx";
-// import type { Props } from "$start/components/atoms/Image.tsx";
-
 import SectionButton from "$start/components/atoms/SectionButton.tsx";
-// import type { Props } from "$start/components/atoms/SectionButton.tsx";
 
-export interface leftContainerProps {
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
+
+export interface rightContainerProps {
   /** @description Titulo da seção */
   sectionTitle?: string;
 
@@ -12,7 +11,7 @@ export interface leftContainerProps {
   sectionText?: string;
 
   /** @description Url da imagem da seção */
-  imgUrl?: string;
+  secImage?: LiveImage;
 
   /** @description Titulo e Url do botão */
   buttonName?: string;
@@ -20,33 +19,23 @@ export interface leftContainerProps {
   buttonUrl?: string;
 }
 
-export default function LeftContainer(
-  {
-    sectionTitle = "default",
-    sectionText = "default",
-    imgUrl = "default",
-    altText = "default",
-    title = "default",
-    buttonName = "default",
-    buttonUrl = "default",
-  }: leftContainerProps,
-) {
+export default function RightContainer(props: rightContainerProps) {
   return (
     <section class="lg:flex-row flex flex-col justify-between space-y-6 lg:space-y-0 lg:space-x-10 items-center">
       {/* Text Left  */}
       <div class="w-full lg:w-1/2">
         <div class="space-y-5 sm:space-y-6">
           <h3 class="text-3xl font-semibold md:text-4xl">
-            {sectionTitle}
+            {props.sectionTitle}
           </h3>
           <p class="w-full text-lg sm:w-4/5">
-            {sectionText}
+            {props.sectionText}
           </p>
 
           {/* Button */}
           <SectionButton
-            buttonName={buttonName}
-            buttonUrl={buttonUrl}
+            buttonName={props.buttonName}
+            buttonUrl={props.buttonUrl}
           />
         </div>
       </div>
@@ -54,7 +43,7 @@ export default function LeftContainer(
       {/* Image Right */}
       <div class="w-full lg:w-1/2">
         <Image
-          src={imgUrl}
+          src={props.secImage}
           className="w-full max-w-full h-auto rounded-lg"
           loading="lazy"
         />

@@ -1,5 +1,4 @@
 import Card from "$start/components/atoms/Card.tsx";
-// import type { Props } from "$start/components/atoms/Card.tsx";
 
 const Cards = [
   {
@@ -41,7 +40,9 @@ const Cards = [
   },
 ];
 
+
 export default function CardsSection() {
+
   return (
     <section class="bg-gray-100">
       <div class="container px-4 py-12 mx-auto sm:py-16 md:py-20 xl:py-28">
@@ -63,14 +64,18 @@ export default function CardsSection() {
 
         {/* Start Cards Div */}
         <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 lg:gap-10">
-          {Cards.map((card) => (
-            <Card
-              iconId={card.iconId}
-              cardTitle={card.cardTitle}
-              cardText={card.cardText}
-              cardUrl={card.cardUrl}
-            />
-          ))}
+          
+          {Cards.map( (item, index) => {
+            return (
+              <Card
+                iconId={item.iconId}
+                cardTitle={item.cardTitle}
+                cardText={item.cardText}
+                cardUrl={item.cardUrl}
+              />
+            )
+          })}
+
         </div>
         {/* End Cards Div */}
       </div>

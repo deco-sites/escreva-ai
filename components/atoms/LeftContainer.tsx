@@ -1,8 +1,7 @@
 import Image from "$start/components/atoms/Image.tsx";
-// import type { Props } from "$start/components/atoms/Image.tsx";
-
 import SectionButton from "$start/components/atoms/SectionButton.tsx";
-// import type { Props } from "$start/components/atoms/SectionButton.tsx";
+
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface leftContainerProps {
   /** @description Titulo da seção */
@@ -12,7 +11,7 @@ export interface leftContainerProps {
   sectionText?: string;
 
   /** @description Url da imagem da seção */
-  imgUrl?: string;
+  secImage?: LiveImage;
 
   /** @description Titulo e Url do botão */
   buttonName?: string;
@@ -22,13 +21,13 @@ export interface leftContainerProps {
 
 export default function LeftContainer(
   {
-    sectionTitle = "default",
-    sectionText = "default",
-    imgUrl = "default",
-    altText = "default",
-    title = "default",
-    buttonName = "default",
-    buttonUrl = "default",
+    sectionTitle,
+    sectionText,
+    secImage,
+    altText,
+    title,
+    buttonName,
+    buttonUrl,
   }: leftContainerProps,
 ) {
   return (
@@ -36,7 +35,7 @@ export default function LeftContainer(
       {/* Image Left */}
       <div class="w-full lg:w-1/2">
         <Image
-          src={imgUrl}
+          src={secImage}
           className="w-full max-w-full h-auto rounded-lg"
           loading="lazy"
         />
