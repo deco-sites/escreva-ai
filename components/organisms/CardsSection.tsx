@@ -1,48 +1,50 @@
-import Card from "$start/components/atoms/Card.tsx";
+import Card, { Props as CardProps } from "$start/components/atoms/Card.tsx";
 
-const Cards = [
+const mockup = [
   {
-    iconId: "foguete",
+    iconId: "foguete" as const,
     cardTitle: "Anúncios",
     cardText: "Crie textos impactantes para anúncios publicitários de sucesso.",
     cardUrl: "#",
   },
   {
-    iconId: "jornal2",
+    iconId: "jornal2" as const,
     cardTitle: "Artigos",
     cardText:
       "Escreva conteúdos impressionantes para seu blog com a Escreva Aí.",
     cardUrl: "#",
   },
   {
-    iconId: "escrita",
+    iconId: "escrita" as const,
     cardTitle: "Copywriting",
     cardText: "Produza textos persuasivos para ações de Marketing e Vendas.",
     cardUrl: "#",
   },
   {
-    iconId: "formatura",
+    iconId: "formatura" as const,
     cardTitle: "Discursos",
     cardText: "Escreva o esboço e melhore-o rapidamente com Escreva AI.",
     cardUrl: "#",
   },
   {
-    iconId: "email",
+    iconId: "email" as const,
     cardTitle: "Emails",
     cardText: "Passe sua mensagem com confiança, profissionalidade e clareza.",
     cardUrl: "#",
   },
   {
-    iconId: "raio",
+    iconId: "raio" as const,
     cardTitle: "Marketing",
     cardText: "Atraia clientes com conteúdos relevantes e criativos.",
     cardUrl: "#",
   },
 ];
 
+export interface Props {
+  cards: CardProps[];
+}
 
-export default function CardsSection() {
-
+function CardsSection({ cards = mockup }: Props) {
   return (
     <section class="bg-gray-100">
       <div class="container px-4 py-12 mx-auto sm:py-16 md:py-20 xl:py-28">
@@ -64,21 +66,12 @@ export default function CardsSection() {
 
         {/* Start Cards Div */}
         <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 lg:gap-10">
-          
-          {Cards.map( (item, index) => {
-            return (
-              <Card
-                iconId={item.iconId}
-                cardTitle={item.cardTitle}
-                cardText={item.cardText}
-                cardUrl={item.cardUrl}
-              />
-            )
-          })}
-
+          {cards.map((item) => <Card {...item} />)}
         </div>
         {/* End Cards Div */}
       </div>
     </section>
   );
 }
+
+export default CardsSection;

@@ -1,9 +1,9 @@
-import Icon from "$start/components/atoms/Icons.tsx";
+import Icon, { AvailableIcons } from "$start/components/atoms/Icons.tsx";
 // import type { Props } from "$start/components/atoms/Icons.tsx";
 
-export interface cardProps {
+export interface Props {
   /** @description Emoji do cartão. */
-  iconId?: string;
+  iconId?: AvailableIcons;
 
   /** @description  Título do cartão. */
   cardTitle?: string;
@@ -16,8 +16,12 @@ export interface cardProps {
 }
 
 export default function Card(
-  { iconId = "🤖", cardTitle = "default", cardText = "default", cardUrl = "/" }:
-    cardProps,
+  {
+    iconId = "foguete",
+    cardTitle = "default",
+    cardText = "default",
+    cardUrl = "/",
+  }: Props,
 ) {
   return (
     <a
@@ -27,7 +31,7 @@ export default function Card(
       style="background: linear-gradient(208deg, rgb(56, 189, 248) -9%, rgb(10, 0, 31) 100%);"
     >
       <p>
-        <Icon id={iconId} size="24" />
+        <Icon id={iconId} size={24} />
       </p>
       <h4 class="font-bold tracking-normal leading-[1.4em] text-lg md:text-3xl">
         {cardTitle}

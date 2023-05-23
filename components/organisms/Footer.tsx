@@ -1,5 +1,4 @@
 export interface FooterProps {
-
   /** @description Titulo do Footer */
   title: string;
 
@@ -17,18 +16,17 @@ export interface FooterProps {
   /** @description Link 2 - Footer*/
   Link_2_title: string;
   /** @description Link 2: Url - Footer*/
-  Link_2_url: string;    
+  Link_2_url: string;
 
   /** @description Link 3 - Footer*/
   Link_3_title: string;
   /** @description Link 3: Url - Footer*/
-  Link_3_url: string;  
+  Link_3_url: string;
 
   /** @description Link 4 - Footer*/
   Link_4_title: string;
   /** @description Link 4: Url - Footer*/
-  Link_4_url: string;  
-
+  Link_4_url: string;
 }
 
 export default function FooterContainer(props: FooterProps) {

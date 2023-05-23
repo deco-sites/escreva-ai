@@ -4,7 +4,6 @@ import RightContainer from "$start/components/atoms/RightContainer.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface ImgSectionsProps {
-
   // Seção 1 -------------------------------------
 
   /** @description Titulo da seção 1 */

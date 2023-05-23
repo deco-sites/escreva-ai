@@ -1,4 +1,4 @@
-import type { Image } from "$live/std/ui/types/Image.ts";
+import type { Image } from "deco-sites/std/components/types.ts";
 import { Head } from "$fresh/runtime.ts";
 
 export interface ImageProps {

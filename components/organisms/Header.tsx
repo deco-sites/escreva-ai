@@ -1,9 +1,8 @@
-import { useEffect, useState } from "preact/hooks";
+import { useState } from "preact/hooks";
 
 import NavItem from "$start/components/atoms/NavItem.tsx";
 
 import BigButton from "$start/components/atoms/BigButton.tsx";
-import { buttonProps } from "$start/components/atoms/BigButton.tsx";
 
 const navItems = [
   { itemName: "Blog", itemUrl: "#", iconId: "jornal" },
